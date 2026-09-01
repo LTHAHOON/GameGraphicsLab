@@ -1,0 +1,44 @@
+# 
+# Wavefront material file
+# Created in RealityCapture v1.0.2
+# www.capturingreality.com
+# 
+
+newmtl 300k_8x8ktest_Material
+Ka 1 1 1
+Kd 1 1 1
+d 1
+Ns 0
+illum 1
+
+newmtl 300k_8x8ktest_Material_u1_v1
+Ka 1 1 1
+Kd 1 1 1
+d 1
+Ns 0
+illum 1
+map_Kd 300k_8x8ktest_u1_v1.jpg
+
+newmtl 300k_8x8ktest_Material_u2_v1
+Ka 1 1 1
+Kd 1 1 1
+d 1
+Ns 0
+illum 1
+map_Kd 300k_8x8ktest_u2_v1.jpg
+
+newmtl 300k_8x8ktest_Material_u1_v2
+Ka 1 1 1
+Kd 1 1 1
+d 1
+Ns 0
+illum 1
+map_Kd 300k_8x8ktest_u1_v2.jpg
+
+newmtl 300k_8x8ktest_Material_u2_v2
+Ka 1 1 1
+Kd 1 1 1
+d 1
+Ns 0
+illum 1
+map_Kd 300k_8x8ktest_u2_v2.jpg

@@ -37,7 +37,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Checkboard_Lerp_Ratio: 1.03
+    - _Checkboard_Lerp_Ratio: 0.73
     - _Noise_Scale: 50
     m_Colors:
     - _Checkboard_Color_A: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
