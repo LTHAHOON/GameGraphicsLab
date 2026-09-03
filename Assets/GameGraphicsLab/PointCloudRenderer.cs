@@ -19,10 +19,7 @@ public class PointCloudRenderer : MonoBehaviour
     private MeshFilter _meshFilter;
     [SerializeField]
     private float _particleSize = 0.1f;
-    [SerializeField]
-    private float _updateDelay = 0.5f;
-    
-    private float _curTime = 0f;
+
     private void Start()
     {
         vfx = GetComponent<VisualEffect>();
@@ -48,17 +45,12 @@ public class PointCloudRenderer : MonoBehaviour
     {
         if (_toUpdate)
         {
-            _curTime += Time.deltaTime;
-            if (_curTime >= _updateDelay)
-            {
-                //_toUpdate = false;
-                vfx.Reinit();
-                vfx.SetUInt(Shader.PropertyToID("ParticleCount"), _particleCount);
-                vfx.SetTexture(Shader.PropertyToID("TexColor"), _texColor);
-                vfx.SetTexture(Shader.PropertyToID("TexPosScale"), _texPosScale);
-                vfx.SetUInt(Shader.PropertyToID("Resolution"), _resolution);
-                _curTime = 0f;
-            }
+            _toUpdate = false;
+            vfx.SetUInt(Shader.PropertyToID("ParticleCount"), _particleCount);
+            vfx.SetTexture(Shader.PropertyToID("TexColor"), _texColor);
+            vfx.SetTexture(Shader.PropertyToID("TexPosScale"), _texPosScale);
+            vfx.SetUInt(Shader.PropertyToID("Resolution"), _resolution);
+            vfx.Reinit();
         }
     }
 
