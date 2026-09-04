@@ -61,6 +61,52 @@
         "*.meta": "yaml",
         "*.prefab": "yaml",
         "*.unity": "yaml",
+        "*.shader": "hlsl",
+        "*.cginc": "unityshader",
+        "*.hlsl": "unityshader",
+        "*.hlsli": "unityshader",
+        "*.compute": "unityshader"
+    },
+    "unityshader.engineType": "unity",
+    "unityshader.suggest.basic": true,
+    "unityshader.suggest.unity": true,
+    "unityshader.suggest.urp": true,
+    "unityshader.analysis.semanticAnalysis": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.quickSuggestionsDelay": 0,
+    "[unityshader]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": false
+        },
+        "editor.inlineSuggest.enabled": true,
+        "editor.suggest.showWords": true,
+        "editor.suggest.showMethods": true,
+        "editor.suggest.showFunctions": true
+    },
+    "[hlsl]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": false
+        },
+        "editor.inlineSuggest.enabled": true,
+        "editor.suggest.showWords": true,
+        "editor.suggest.showMethods": true,
+        "editor.suggest.showFunctions": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.attribute.unityshader",
+                "settings": {
+                    "foreground": "#D7BA7D"
+                }
+            }
+        ]
     },
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
