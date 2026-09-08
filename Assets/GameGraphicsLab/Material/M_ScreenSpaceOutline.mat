@@ -38,8 +38,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _DepthToCompare: 104.6
-    - _Outline_Thickness: 3
-    - _Outline_Threshold: 2.83
+    - _Outline_Thickness: 2
+    - _Outline_Threshold: 0.45
     m_Colors:
     - _Outline_Color: {r: 0, g: 2.649438, b: 5.992157, a: 1}
   m_BuildTextureStacks: []
