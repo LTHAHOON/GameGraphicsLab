@@ -11,6 +11,7 @@ Shader "Custom/Water_02"
         _Wave_Speed("Wave Speed", Range(0.0, 5.0)) = 1.5
         _Alpha("Alpha", Range(0.0, 1.0)) = 1.0
         _Steam_Tex("Steam Texture", 2D) = "white" {}
+        [Toggle]_GraySaturation_Use("GraySaturation Use", float) = 0
         _Steam_Amount("Steam Amount", Range(0.0, 1.0)) = 0.0
         _Steam_Power("Steam Power", float) = 1
         _Steam_Intensity("Steam Intensity", float) = 1
@@ -23,8 +24,8 @@ Shader "Custom/Water_02"
     {
         Tags 
         {
-            "RenderPipeline"="UniversalPipeline"
             "RenderType"="Transparent"
+            "RenderPipeline"="UniversalPipeline"
             "UniversalMaterialType" = "Unlit"
             "Queue"="Transparent"
         }
@@ -60,8 +61,9 @@ Shader "Custom/Water_02"
 
             TEXTURE2D(_Water_Tex);
             SAMPLER(sampler_Water_Tex);
+
             TEXTURE2D(_Steam_Tex);
-            SAMPLER(sampler_Steam_Tex);
+            //SAMPLER(sampler_Steam_Tex);
 
             CBUFFER_START(UnityPerMaterial)
                 float _Alpha;
@@ -72,6 +74,7 @@ Shader "Custom/Water_02"
                 float _Wave_Frequency;
                 float _Wave_Speed;
                 float4 _Steam_Tex_ST;
+                float _GraySaturation_Use;
                 float2 _Steam_OffsetSpeed;
                 float _Steam_Amount;
                 float _Steam_Power;
@@ -84,7 +87,7 @@ Shader "Custom/Water_02"
             {
                 float time = _Time.y * _Wave_Speed;
                 float waveX = sin(positionOS.x * _Wave_Frequency + time);
-                float waveZ = cos(positionOS.z * _Wave_Frequency * 0.8 - time * 1.2);
+                float waveZ = cos(positionOS.z * _Wave_Frequency * 0.6 - time * 1.2);
                 return (waveX + waveZ) * 0.5 * _Wave_Height;
             }
 
@@ -122,29 +125,22 @@ Shader "Custom/Water_02"
                 uv += _Time.y * speed;
             }
 
-            void UVWave_Distort(inout float2 uv, float amplitude, float frequency, float speed)
-            {
-                float time = _Time.y * speed;
-                float waveX = sin(uv.y * frequency + time);
-                float waveY = cos(uv.x * frequency * 0.8 - time * 1.2);
-                uv += float2(waveX, waveY) * amplitude;
-            }
-
-
             half4 frag(Varyings IN) : SV_TARGET
             {
-                float rim = Rim_Lighting(IN.viewDir, IN.normalWS,_Rim_Power, _Rim_Intensity);
+                float rim = Rim_Lighting(IN.viewDir, IN.normalWS, _Rim_Power, _Rim_Intensity);
                 rim = (rim * 0.5f) + 0.5f;
 
                 float2 waterUV = IN.uvData.xy;
                 UVOffset_Move(waterUV, _Water_OffsetSpeed);
-                UVWave_Distort(waterUV, 0.025, 8.0, 1.5);
                 half4 color = SAMPLE_TEXTURE2D(_Water_Tex, sampler_Water_Tex, waterUV) * _WaterColor * rim;
 
                 float2 blendUV = IN.uvData.zw;
                 UVOffset_Move(blendUV, _Steam_OffsetSpeed);
-                half4 blendColor = SAMPLE_TEXTURE2D(_Steam_Tex, sampler_Steam_Tex, blendUV) * _Steam_Intensity;
-                blendColor.rgb = dot(blendColor.rgb, half3(0.299h, 0.587h, 0.114h));
+                half4 blendColor = SAMPLE_TEXTURE2D(_Steam_Tex, sampler_Water_Tex, blendUV) * _Steam_Intensity;
+                if(_GraySaturation_Use > 0.5)
+                {
+                     blendColor.rgb = dot(blendColor.rgb, half3(0.299h, 0.587h, 0.114h));
+                }
                 blendColor.rgb = pow(blendColor.rgb, _Steam_Power);
                 color = lerp(color, blendColor, _Steam_Amount);
                 color.a = _Alpha;

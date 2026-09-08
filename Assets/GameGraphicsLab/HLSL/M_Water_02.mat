@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_NewUnlitUniversalRenderPipelineShader
+  m_Name: M_Water_02
   m_Shader: {fileID: 4800000, guid: f26731260fce12d4fa4d814198671347, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -16,7 +16,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -45,6 +45,7 @@ Material:
     - _Blend_Amount: 0.5
     - _Blend_Intensity: 2.51
     - _Blend_Power: 3.5
+    - _GraySaturation_Use: 0
     - _Rim_Intensity: 10
     - _Rim_Power: 1.22
     - _Steam_Amount: 0.4
