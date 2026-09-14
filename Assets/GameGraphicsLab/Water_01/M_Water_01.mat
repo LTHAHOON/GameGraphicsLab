@@ -44,7 +44,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Reflection_Cube:
-        m_Texture: {fileID: 8900000, guid: b3a49846d72d43945a3925f63e416c20, type: 3}
+        m_Texture: {fileID: 8900000, guid: 66d676a4a97590a4bad73d4d4f425bda, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Reflection_Tex:
@@ -118,7 +118,7 @@ Material:
     - _Water_Alpha: 1
     - _Water_Depth_Strength: 1.27
     - _Water_Intensity: 2
-    - _Water_Power: 1.5
+    - _Water_Power: 2.2
     - _Wave_Frequency: 2
     - _Wave_Speed: 1.5
     - _WorkflowMode: 0
@@ -130,7 +130,7 @@ Material:
     - _Foam_Speed: {r: 0.7, g: 0.5, b: 0, a: 0}
     - _Reflection_Offset_Speed: {r: 0.01, g: 0.01, b: 0, a: 0}
     - _Reflection_Tiling: {r: 0.02, g: 0.05, b: 0, a: 0}
-    - _Rim_Color: {r: 0.6274534, g: 2.0984347, b: 2.608238, a: 1}
+    - _Rim_Color: {r: 1.9766746, g: 1.5521271, b: 0.47605774, a: 1}
     - _Specular_Color: {r: 0, g: 0.23041743, b: 0.5849056, a: 1}
     - _Water_Color: {r: 0, g: 0.48615155, b: 1.0717735, a: 1}
     - _Water_Offset_Speed_01: {r: 0.05, g: 0.03, b: 0, a: 0}
