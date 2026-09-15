@@ -37,14 +37,14 @@ Material:
     RenderType: Transparent
   disabledShaderPasses:
   - MOTIONVECTORS
-  - SHADOWCASTER
   - DepthOnly
+  - SHADOWCASTER
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _Reflection_Cube:
-        m_Texture: {fileID: 8900000, guid: f44c0d121885fec4ea3246ff38d8b7df, type: 3}
+        m_Texture: {fileID: 8900000, guid: 71b44e2f976cd9740a62c3650781c3bc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Reflection_Tex:
@@ -113,7 +113,7 @@ Material:
     - _Rim_Power: 1.25
     - _Rim_Scale: 2
     - _Roughness: 0.15
-    - _Smoothness: 0.5
+    - _Smoothness: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 1

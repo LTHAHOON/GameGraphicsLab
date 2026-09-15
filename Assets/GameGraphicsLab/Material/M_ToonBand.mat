@@ -52,7 +52,7 @@ Material:
     - _LightDirectionWS: {r: 0.3, g: 0.8, b: 0.4, a: 0}
     - _LitColor: {r: 1, g: 0.8258381, b: 0, a: 1}
     - _MainColor: {r: 0.34049457, g: 1, b: 0, a: 1}
-    - _ShadowColor: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
+    - _ShadowColor: {r: 0.5698112, g: 0.5698112, b: 0.5698112, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8318915307486542114
