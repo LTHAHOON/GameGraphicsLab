@@ -8079,10 +8079,10 @@
     "promotedFromAssetID": "",
     "promotedFromCategoryName": "",
     "promotedOrdering": -1,
-    "m_Name": "Roughness",
+    "m_Name": "Smoothness",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Roughness",
-    "m_DefaultReferenceName": "_Roughness",
+    "m_RefNameGeneratedByDisplayName": "Smoothness",
+    "m_DefaultReferenceName": "_Smoothness",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
@@ -8657,10 +8657,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1723.999755859375,
-            "y": 916.9998779296875,
-            "width": 130.0001220703125,
-            "height": 118.0
+            "x": 1832.800048828125,
+            "y": 906.4000244140625,
+            "width": 130.3997802734375,
+            "height": 117.5999755859375
         }
     },
     "m_Slots": [
@@ -9082,10 +9082,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1491.9998779296875,
-            "y": 951.9999389648438,
-            "width": 204.0,
-            "height": 190.00006103515626
+            "x": 1495.9998779296875,
+            "y": 929.5999755859375,
+            "width": 208.0,
+            "height": 373.599853515625
         }
     },
     "m_Slots": [
@@ -9563,10 +9563,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1512.999755859375,
-            "y": 856.9999389648438,
-            "width": 177.0001220703125,
-            "height": 34.0
+            "x": 1584.800048828125,
+            "y": 830.4000244140625,
+            "width": 177.5999755859375,
+            "height": 33.5999755859375
         }
     },
     "m_Slots": [
@@ -10046,8 +10046,8 @@
     "m_ObjectId": "65a1838ec1d74ea5bff492a73ed29ec2",
     "m_Title": "림 라이트",
     "m_Position": {
-        "x": -28.000017166137697,
-        "y": -156.0001220703125
+        "x": -28.799983978271486,
+        "y": -157.60000610351563
     }
 }
 
@@ -10247,8 +10247,8 @@
     "m_ObjectId": "6a908f3989fa4c5d8e2b2af1bdaa9801",
     "m_Title": "Wave",
     "m_Position": {
-        "x": -406.00006103515627,
-        "y": -2163.000244140625
+        "x": -406.4001159667969,
+        "y": -2164.800048828125
     }
 }
 
@@ -11385,8 +11385,8 @@
     "m_ObjectId": "7e4551a4679b4e8bbd8cf9ed6650d2e2",
     "m_Title": "멀수록 Reflection 약화",
     "m_Position": {
-        "x": 622.0,
-        "y": 1504.0
+        "x": 621.6000366210938,
+        "y": 1502.39990234375
     }
 }
 
@@ -11488,8 +11488,8 @@
     "m_ObjectId": "7fe3299ece8b4c1caac6884a1e51f908",
     "m_Title": "멀수록 왜곡 증가",
     "m_Position": {
-        "x": 981.0,
-        "y": -57.000038146972659
+        "x": 980.800048828125,
+        "y": -58.39996337890625
     }
 }
 
@@ -13640,8 +13640,8 @@
     "m_ObjectId": "a6c3153a49c94a85be5036587b06bac6",
     "m_Title": "알파",
     "m_Position": {
-        "x": 1446.0,
-        "y": 441.99993896484377
+        "x": 1445.5999755859375,
+        "y": 440.800048828125
     }
 }
 
@@ -14522,8 +14522,8 @@
     "m_ObjectId": "b430e6bfe73e44f48b2a8f3d30db7833",
     "m_Title": "Reflection_Cubemap",
     "m_Position": {
-        "x": 1011.0,
-        "y": 798.0001220703125
+        "x": 1010.4000244140625,
+        "y": 769.60009765625
     }
 }
 
@@ -14777,7 +14777,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "b7121715f1054018af8af0857822f6b5",
     "m_Id": 0,
-    "m_DisplayName": "Roughness",
+    "m_DisplayName": "Smoothness",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_HideConnector": false,
@@ -15500,10 +15500,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1834.1953125,
-            "y": 1611.0589599609375,
-            "width": 138.0,
-            "height": 34.0
+            "x": 1955.199951171875,
+            "y": 1558.4000244140625,
+            "width": 138.39990234375,
+            "height": 33.60009765625
         }
     },
     "m_Slots": [
@@ -16120,8 +16120,8 @@
     "m_ObjectId": "c866b7b7f04f4efcb2b7812b08563ae8",
     "m_Title": "왜곡",
     "m_Position": {
-        "x": -1346.0,
-        "y": -853.0001831054688
+        "x": -1346.4000244140625,
+        "y": -854.4000854492188
     }
 }
 
@@ -16410,8 +16410,8 @@
     "m_ObjectId": "cb9b1af0748345af87f814389c77d48a",
     "m_Title": "깊이 설정",
     "m_Position": {
-        "x": -46.00001907348633,
-        "y": -796.0001831054688
+        "x": -46.4000244140625,
+        "y": -797.60009765625
     }
 }
 
@@ -17095,8 +17095,8 @@
     "m_ObjectId": "dcda0df70cbc427ab09f3d380ddc7d87",
     "m_Title": "메인 텍스처",
     "m_Position": {
-        "x": -1245.0,
-        "y": 240.99986267089845
+        "x": -1245.60009765625,
+        "y": 240.00006103515626
     }
 }
 
@@ -19490,8 +19490,8 @@
     "m_ObjectId": "fe0cc813f6a1430fbd475d69f1ab8696",
     "m_Title": "Reflection 텍스처",
     "m_Position": {
-        "x": -870.0,
-        "y": 1141.0
+        "x": -870.400146484375,
+        "y": 1140.0001220703125
     }
 }
 
