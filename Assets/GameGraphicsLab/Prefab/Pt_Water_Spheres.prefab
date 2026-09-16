@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8328006867129720293}
   - component: {fileID: 6567331049527974142}
   m_Layer: 0
-  m_Name: FX_Water_Spheres
+  m_Name: Pt_Water_Spheres
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -14837,7 +14837,7 @@ GameObject:
   - component: {fileID: 3254976432810539125}
   - component: {fileID: 7624732262238631175}
   m_Layer: 0
-  m_Name: FX_Water_Spray
+  m_Name: Pt_Water_Spray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

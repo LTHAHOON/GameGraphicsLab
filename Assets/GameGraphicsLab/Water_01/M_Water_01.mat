@@ -111,7 +111,7 @@ Material:
     - _Reflection_LOD: 1
     - _Rim_Intensity: 1
     - _Rim_Power: 1.25
-    - _Rim_Scale: 2
+    - _Rim_Scale: 2.5
     - _Roughness: 0.15
     - _Smoothness: 1
     - _SrcBlend: 1
@@ -135,7 +135,7 @@ Material:
     - _Reflection_Tiling: {r: 0.02, g: 0.05, b: 0, a: 0}
     - _Rim_Color: {r: 0, g: 1.3471469, b: 3.0180662, a: 1}
     - _ScreenUV: {r: 0, g: 0, b: 0, a: 0}
-    - _Specular_Color: {r: 0, g: 0.23041743, b: 0.5849056, a: 1}
+    - _Specular_Color: {r: 0, g: 0, b: 0, a: 1}
     - _Water_Color: {r: 0, g: 0.12543541, b: 0.27538106, a: 1}
     - _Water_Offset_Speed_01: {r: 0.05, g: 0.03, b: 0, a: 0}
     - _Water_Offset_Speed_02: {r: -0.03, g: -0.04, b: 0, a: 0}
