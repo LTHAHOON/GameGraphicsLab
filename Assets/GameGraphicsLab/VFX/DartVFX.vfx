@@ -16,10 +16,10 @@ MonoBehaviour:
   - title: Flying Darts
     position:
       serializedVersion: 2
-      x: -313
-      y: -1513
-      width: 1015
-      height: 3069
+      x: -312
+      y: -1511
+      width: 1027
+      height: 3165
     contents:
     - model: {fileID: 8926484042661614558}
       id: 0
@@ -156,10 +156,10 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: -313
-    y: -2450
-    width: 4003
-    height: 5302
+    x: -312
+    y: -2449
+    width: 4002
+    height: 5309
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -212,7 +212,6 @@ MonoBehaviour:
   - {fileID: 8926484042661618137}
   - {fileID: 8926484042661618188}
   - {fileID: 8926484042661618200}
-  - {fileID: 8926484042661618520}
   - {fileID: 8926484042661618589}
   - {fileID: 8926484042661618592}
   - {fileID: 8926484042661618607}
@@ -834,7 +833,7 @@ MonoBehaviour:
   - {fileID: 8926484042661617318}
   - {fileID: 8926484042661617345}
   - {fileID: 8926484042661618585}
-  m_UIPosition: {x: 253, y: 52}
+  m_UIPosition: {x: 253, y: 271}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -2633,7 +2632,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661617570}
       inputSlot: {fileID: 8926484042661617577}
-    position: {x: 63.2, y: -72.8}
+    position: {x: 63, y: -73}
     expandedSlots:
     - {fileID: 8926484042661617570}
     expanded: 0
@@ -3050,7 +3049,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661617583}
       inputSlot: {fileID: 8926484042661617971}
-    position: {x: 51.2, y: 1461.6}
+    position: {x: 51, y: 1462}
     expandedSlots: []
     expanded: 1
     supecollapsed: 0
@@ -7541,7 +7540,7 @@ MonoBehaviour:
   m_Children:
   - {fileID: 8926484042661617968}
   - {fileID: 8926484042661617970}
-  m_UIPosition: {x: 249, y: 948}
+  m_UIPosition: {x: 266, y: 1146}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -9660,7 +9659,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661618086}
       inputSlot: {fileID: 8926484042661614579}
-    position: {x: 76, y: -301.59998}
+    position: {x: 76, y: -302}
     expandedSlots: []
     expanded: 1
     supecollapsed: 0
@@ -9668,7 +9667,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661618086}
       inputSlot: {fileID: 8926484042661618094}
-    position: {x: -128, y: -520.8}
+    position: {x: -128, y: -521}
     expandedSlots: []
     expanded: 1
     supecollapsed: 0
@@ -12008,58 +12007,6 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
   m_LinkedSlots: []
---- !u!114 &8926484042661618520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73a13919d81fb7444849bae8b5c812a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.VisualEffectGraph.Editor::UnityEditor.VFX.VFXBasicSpawner
-  m_UIIgnoredErrors: []
-  m_Parent: {fileID: 114350483966674976}
-  m_Children: []
-  m_UIPosition: {x: 1144, y: -122}
-  m_UICollapsed: 0
-  m_UISuperCollapsed: 0
-  m_InputSlots: []
-  m_OutputSlots: []
-  m_Label: 
-  m_Data: {fileID: 8926484042661618521}
-  m_InputFlowSlot:
-  - link: []
-  - link: []
-  m_OutputFlowSlot:
-  - link: []
-  loopDuration: 0
-  loopCount: 0
-  delayBeforeLoop: 0
-  delayAfterLoop: 0
---- !u!114 &8926484042661618521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f68759077adc0b143b6e1c101e82065e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.VisualEffectGraph.Editor::UnityEditor.VFX.VFXDataSpawner
-  m_UIIgnoredErrors: []
-  m_Parent: {fileID: 0}
-  m_Children: []
-  m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
-  m_UISuperCollapsed: 0
-  title: 
-  m_Owners:
-  - {fileID: 8926484042661618520}
 --- !u!114 &8926484042661618541
 MonoBehaviour:
   m_ObjectHideFlags: 0
